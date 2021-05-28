@@ -51,6 +51,8 @@
   * [Data format](#data-format)
   * [Data gathering](#how-the-data-was-gathered)
 * [Getting Started](#getting-started)
+  * [Download the Dataset](#download-the-dataset)
+  * [Install the python support library](#install-the-python-support-library)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -68,7 +70,7 @@
 
 <div align="center">
   <a href="https://github.com/ifs-rwth-aachen/GERSign">
-    <img src="https://github.com/ifs-rwth-aachen/GERSign/-/raw/master/assets/sunny_example_1.jpg" alt="Screenshot" width="600">
+    <img src="https://github.com/ifs-rwth-aachen/GERSign/blob/main/assets/sunny_example_1.jpg?raw=true" alt="Screenshot" width="600">
   </a>    
 </div>
 
@@ -121,6 +123,20 @@ The individual frames were created from video recordings from cab view rides whi
 
 <!-- GETTING STARTED -->
 ## Getting Started
+
+### Download the Dataset
+
+The images and annotations can be downloaded from here: TODO
+
+### Install the python support library
+
+##### Install via pip
+
+```sh
+pip install gersign-tools
+```
+
+##### Install using this repo
 
 1. Install git ([Instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
 
