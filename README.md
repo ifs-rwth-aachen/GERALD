@@ -67,10 +67,11 @@
 
 
 <div align="center">
-  <a href="https://git.rwth-aachen.de/IFS/gersign">
-    <img src="https://git.rwth-aachen.de/IFS/gersign/-/raw/master/example.PNG" alt="Screenshot" width="600">
+  <a href="https://github.com/ifs-rwth-aachen/GERSign">
+    <img src="https://github.com/ifs-rwth-aachen/GERSign/-/raw/master/assets/sunny_example_1.jpg" alt="Screenshot" width="600">
   </a>    
 </div>
+
 
 The German mainline railway form- und lightsignal dataset (GERSign) contains 3562 individual images with 25820 labelled bounding boxes  for many types of signals. Our first goal was to achieve at least 500 labelled instances for the following signal types:
 
@@ -197,6 +198,7 @@ Philipp Leibner - philipp.leibner@ifs.rwth-aachen.de 	Fabian Hampel - fabian.ham
 
 ## Related Dataset
 * [RailSem19](https://wilddash.cc/railsem19) (For general semantic scene understanding of railway related scenes)
+* [FRSign](https://frsign.irt-systemx.fr/) (Dataset for French railway signals)
 * [COCO](https://cocodataset.org/#home) (Includes bounding boxes for trains, cars and traffic lights (treats railway signals as traffic lights))
 
 
