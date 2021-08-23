@@ -35,11 +35,12 @@
   </div>
 
 
-  <h3 align="center">GERSign Dataset</h3>
+  <h3 align="center"> The GERALD Dataset</h3>
 
   <div align="center">
-    Dataset for German mainline railway light- and formsignals
+    <b>Ge</b>rman <b>Ra</b>ilway <b>L</b>ightsignal <b>D</b>ataset
   </div>
+
 
 
 
@@ -48,8 +49,10 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Data format](#data-format)
-  * [Data gathering](#how-the-data-was-gathered)
+  * [General Information](#general-information)
+  * [Research Paper](#research-paper)
+  * [Data Format](#data-format)
+  * [Data Gathering](#how-the-data-was-gathered)
 * [Getting Started](#getting-started)
   * [Download the Dataset](#download-the-dataset)
   * [Install the python support library](#install-the-python-support-library)
@@ -75,41 +78,41 @@
 </div>
 
 
-The German mainline railway form- und lightsignal dataset (GERSign) contains 3562 individual images with 25820 labelled bounding boxes  for many types of signals. Our first goal was to achieve at least 500 labelled instances for the following signal types:
+### General Information
 
-* H/V system: Hp 0 (HV), Hp 1, Hp 2, Vr 0, Vr 1, Vr 2
-* Ks system: Hp 0 (Ks), Ks 1, Ks 2
+The GERALD dataset contains 5000 individual images and annotations for 33554 occurring objects. Our focus was to annotate occuring lightsignals, however, we decided to also include annotations for other occuring objects (mostly static signs) for more a comprehensive understanding of the enviroment. From the three existing signalling systems used in Germany we decided to only gather images from the H/V- and Ks-Signalling-System. The additional Hl-Signalling-System is only in use on some tracks in the territory of former East Germany and we only found a few available videos showing these signals. The signal aspects of the H/V- and Ks-System form the main classes of the dataset:
+
+* H/V-Signalling-System: Hp 0 (HV), Hp 1, Hp 2, Vr 0, Vr 1, Vr 2
+* Ks-Signalling-System: Hp 0 (Ks), Ks 1, Ks 2
 
 The following table specifies how many instances of each main class were labelled:
 
-| Hp 0 (HV) | Hp 1  | Hp 2  | Vr 0  | Vr 1  | Vr 2  | Hp 0 (Ks) | Ks 1  | Ks 2  |
-| --------- | ----- | ----- | ----- | ----- | ----- | --------- | ----- | ----- |
-| 1147      | 727   | 554   | 1055  | 789   | 528   | 560       | 1077  | 614   |
-| 4.4 %     | 2.8 % | 2.2 % | 4.1 % | 3.1 % | 2.1 % | 2.2 %     | 4.2 % | 2.4 % |
+| Hp 0 (HV) | Hp 1   | Hp 2  | Vr 0   | Vr 1   | Vr 2  | Hp 0 (Ks) | Ks 1   | Ks 2  |
+| --------- | ------ | ----- | ------ | ------ | ----- | --------- | ------ | ----- |
+| 1700      | 973    | 627   | 1422   | 1115   | 554   | 807       | 1182   | 761   |
+| 18.6 %    | 10.6 % | 6.9 % | 15.6 % | 12.2 % | 6.1 % | 8.8 %     | 12.9 % | 8.3 % |
 
-Nevertheless many more signal types were labelled to obtain a complete dataset regarding german mainline railway signals. When training models with the dataset it can be helpful to also have classes for very similar looking objects in order to reduce False Positives e.g. when signal backsides are visible. Therefore backsides of signals and signs, turned off signals as well as traffic lights and signs have been labelled. The following figure shows all classes and their corresponding amount of labelled instances.
+Nevertheless many more signal types were labelled to obtain a more complete dataset regarding German mainline railway signals and to enable detection of mast signs, hectometre signs etc. The following figure shows all classes and their corresponding amount of labelled instances.
 
-![](distribution.png)
+![](assets/distribution.png)
 
 For each image we also added information about the weather and light condition which distributes as follows:
 
-| Unknown | Sunny | Cloudy | Rainy  | Snowy | Foggy |
-| ------- | ----- | ------ | ------ | ----- | ----- |
-| 121     | 962   | 1746   | 457    | 164   | 112   |
-| 3.4 %   | 27 %  | 49 %   | 12.8 % | 4.6 % | 3.1%  |
+| Unknown | Sunny  | Cloudy | Rainy  | Snowy | Foggy |
+| ------- | ------ | ------ | ------ | ----- | ----- |
+| 565     | 996    | 1925   | 1068   | 164   | 282   |
+| 11.3 %  | 19.9 % | 38.5 % | 21.4 % | 3.3 % | 5.6 % |
 
 <sub><sup>Unknown weather tag is used for pictures at night or in tunnels*</sup></sub>
 
-| Daylight | Twilight | Dark  |
-| -------- | -------- | ----- |
-| 2148     | 1228     | 186   |
-| 60.3 %   | 34.5 %   | 5.2 % |
+| Daylight | Twilight | Dark   |
+| -------- | -------- | ------ |
+| 2969     | 1401     | 630    |
+| 59.4 %   | 28.0 %   | 12.6 % |
 
-What is not (yet) included or currently in progress of labelling:
+### Research Paper
 
-- Hl Signals (Not yet planned)
-
-  
+You can find the accompanying research paper here: INSERT LINK. The paper includes more information about autonomous driving in railways in general and additional statistics and a deeper analysis of the dataset. We also show some exemplary results based on a YOLOv4 network trained on GERALD. 
 
 ### Data format
 
@@ -150,17 +153,6 @@ pip install gersign-tools
 
 3. The example.py and utils package include some python code to help you load the annotations
 
-<!-- ROADMAP -->
-
-## Roadmap
-
-2. Gather more images to include more instances of rarely occurring signals
-3. Include Hl system
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
 <!-- CONTRIBUTING -->
 
 ## Contributing
@@ -184,18 +176,19 @@ We would like to thank all YouTubers by supporting us with their cab view record
 - [Tf on Tour](https://www.youtube.com/channel/UC-IVgRwev81WZ5J9CN9T--A)
 - [Ananas 747](https://www.youtube.com/channel/UCNLlR8wGbXNVVT_IAwI8qpg)
 - [German Express Driver](https://www.youtube.com/channel/UCgfJB0BN0x2qYqqpple5OOw)
-- [Rotausleuchtung](https://www.youtube.com/channel/UCZXB_WOu2iSYZeWj1C4p2Zg)(Response pending!)
+- [Rotausleuchtung](https://www.youtube.com/channel/UCZXB_WOu2iSYZeWj1C4p2Zg)
 
 <!-- LICENSE -->
 ## License
 
-<p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><span rel="dct:title">The GERSign Dataset</span> by <span property="cc:attributionName">Philipp Leibner and Fabian Hampel</span> is licensed under 
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><span rel="dct:title">The GERALD Dataset</span> by <span property="cc:attributionName">Philipp Leibner and Fabian Hampel</span> is licensed under 
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" />
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" />
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" />
 </a>
 </p>
+
 
 
 
