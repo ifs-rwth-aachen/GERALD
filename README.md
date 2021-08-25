@@ -171,6 +171,7 @@ We would like to thank all YouTubers by supporting us with their cab view record
 
 The GERALD Dataset by Philipp Leibner and Fabian Hampel is licensed
 
+The gerald-tools provided in this repository are licensed under the Apache 2.0 License.
 
 
 <!-- CONTACT -->
