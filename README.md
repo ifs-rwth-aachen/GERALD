@@ -136,7 +136,7 @@ The images and annotations can be downloaded from here: TODO
 ##### Install via pip
 
 ```sh
-pip install gersign-tools
+pip install gerald-tools
 ```
 
 ##### Install using this repo
@@ -146,28 +146,16 @@ pip install gersign-tools
 2. Clone the repo
 
    ```sh
-   git clone https://git.rwth-aachen.de/IFS/gersign.git
+   git clone git@github.com:ifs-rwth-aachen/GERALD.git
    ```
 
-   
-
-3. The example.py and utils package include some python code to help you load the annotations
+3. The main.py includes some example code to load the dataset and display one image including the annotations
 
 <!-- CONTRIBUTING -->
 
 ## Contributing
 
-You are welcome to contribute to the dataset. The following steps guide you through process of contributing and give tips for data labelling
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewImages`)
-3. Gather your images. Use only material where you have the rights to edit and republish the raw material! The YouTubers listed under [Contributors](#contributors) already gave us their permissions, so you do not need to ask again if you want to use some videos of them. If you use material from different sources please send us some proof that you and we are allowed to use, edit and publish the frames created. 
-4. Annotate your images (e.g using VoTT and labelImg). Label your images completely, meaning every class that already occurs in the dataset needs to be labelled in your images as well. If you want to add a new class (e.g. a new sign or signal) you are welcome to do so. Keep mind that new classes have to be labelled in all existing images as well in order to not confuse object detectors (E.g. you want to label switches in your new images, then you have to label all switches in the existing images)
-5. Add your .jpg images to the "JPEGImages" Folder and annotations (in the PASCAL VOC XML Format) to the "Annotations" Folder
-6. For each frame add all additional information (weather, light, author, author url, source url) to the info.json
-7. Commit your Changes (`git commit -m 'Added some new annotated images'`)
-8. Push to the Branch (`git push origin feature/NewImages`)
-9. Open a Pull Request, we will then review your added images and try to merge them into the dataset.
+If you want to contribute to the dataset or our research, please contact us. You can find our contact information further below.
 
 ## Contributors
 
@@ -181,14 +169,7 @@ We would like to thank all YouTubers by supporting us with their cab view record
 <!-- LICENSE -->
 ## License
 
-<p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><span rel="dct:title">The GERALD Dataset</span> by <span property="cc:attributionName">Philipp Leibner and Fabian Hampel</span> is licensed under 
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" />
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" />
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" />
-</a>
-</p>
-
+The GERALD Dataset by Philipp Leibner and Fabian Hampel is licensed
 
 
 
