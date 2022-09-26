@@ -57,7 +57,6 @@
   * [Download the Dataset](#download-the-dataset)
   * [Install the python support library](#install-the-python-support-library)
 * [Usage](#usage)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [Contributors](#contributors)
 * [License](#license)
@@ -112,7 +111,7 @@ For each image we also added information about the weather and light condition w
 
 ### Research Paper
 
-You can find the accompanying research paper here: INSERT LINK. The paper includes more information about autonomous driving in railways in general and additional statistics and a deeper analysis of the dataset. We also show some exemplary results based on a YOLOv4 network trained on GERALD. 
+An accompying publication is currently in the review process. The paper includes more information about autonomous driving in railways in general and additional statistics and a deeper analysis of the dataset. We also show some exemplary results based on a YOLOv4 network trained on GERALD. 
 
 ### Data format
 
@@ -129,7 +128,7 @@ The individual frames were created from video recordings from cab view rides whi
 
 ### Download the Dataset
 
-The images and annotations can be downloaded from here: TODO
+The images and annotations can be found in the /dataset folder of this repo.
 
 ### Install the python support library
 
