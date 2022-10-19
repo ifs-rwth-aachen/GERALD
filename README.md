@@ -110,9 +110,8 @@ For each image we also added information about the weather and light condition w
 | 59.4 %   | 28.0 %   | 12.6 % |
 
 ### Example Video
-<div align="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZJ2rtyu7_Q" title="GERALD Example Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+[![Watch the video](https://img.youtube.com/vi/-ZJ2rtyu7_Q/0.jpg)](https://www.youtube.com/watch?v=-ZJ2rtyu7_Q)
+
 
 This video exemplary shows a YOLOv4 based detector trained on the GERALD dataset.
 ### Research Paper
