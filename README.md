@@ -109,6 +109,12 @@ For each image we also added information about the weather and light condition w
 | 2969     | 1401     | 630    |
 | 59.4 %   | 28.0 %   | 12.6 % |
 
+### Example Video
+<div align="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZJ2rtyu7_Q" title="GERALD Example Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+This video exemplary shows a YOLOv4 based detector trained on the GERALD dataset.
 ### Research Paper
 
 An accompying publication is currently in the review process. The paper includes more information about autonomous driving in railways in general and additional statistics and a deeper analysis of the dataset. We also show some exemplary results based on a YOLOv4 network trained on GERALD. 
