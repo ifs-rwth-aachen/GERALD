@@ -116,7 +116,7 @@ For each image we also added information about the weather and light condition w
 This video exemplary shows a YOLOv4 based detector trained on the GERALD dataset.
 ### Research Paper
 
-An accompying publication is currently in the review process. The paper includes more information about autonomous driving in railways in general and additional statistics and a deeper analysis of the dataset. We also show some exemplary results based on a YOLOv4 network trained on GERALD. 
+An accompying publication can be found here: https://journals.sagepub.com/doi/10.1177/09544097231166472. The paper includes more information about autonomous driving in railways in general and additional statistics and a deeper analysis of the dataset. We also show some exemplary results based on a YOLOv4 network trained on GERALD. 
 
 ### Data format
 
