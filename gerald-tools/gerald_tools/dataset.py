@@ -328,7 +328,7 @@ class GERALDDataset(Dataset):
             annotation.src_url = self.infos[annotation.src_name]["source url"]
 
             phash = self.infos[annotation.src_name]["pHash"]
-            annotation.hash = ImageHash(np.array(list(bin(int(phash, 16))[2:])).reshape((8, 8)).astype(np.bool))
+            annotation.hash = ImageHash(np.array(list(bin(int(phash, 16))[2:])).reshape((8, 8)).astype(bool))
 
         if root.findall("./weather"):
             annotation.weather = WeatherCondition[root.findall("./weather")[0].text]
