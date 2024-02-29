@@ -133,7 +133,7 @@ The individual frames were created from video recordings from cab view rides whi
 
 ### Download the Dataset
 
-The images and annotations can be found [here](https://rwth-aachen.sciebo.de/s/KPi9v3rqQJAYJ5k)
+The images and annotations can be found [here](https://doi.org/10.18154/RWTH-2024-02040)
 
 ### Install the python support library
 
